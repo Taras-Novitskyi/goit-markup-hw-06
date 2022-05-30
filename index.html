@@ -64,12 +64,24 @@
 					<h1 class="hero__title main-title" >Эффективные решения для вашего бизнеса</h1>
 					<button data-modal-open class="hero__button button" type="button"> Заказать услугу</button>
 					<div data-modal class="hero__backdrop is-hidden">
-						<div class="hero__modal">
-							<button data-modal-close type="button" class="hero__close">
-								<svg class="hero__closed-icon" width="70" height="70" >
-									<use href="./img/svg/symbol-defs.svg#icon-antenna"></use>
+						<div class="hero__modal modal-hero">
+							<button data-modal-close type="button" class="modal-hero__close">
+								<svg class="modal-hero__closed-icon" width="18" height="18" >
+									<use href="./img/svg/symbol-defs.svg#icon-close"></use>
 								</svg>
 							</button>
+							<form class="modal-hero__form form">
+								<h2 class="form__title title-h3">Оставьте свои данные, мы вам перезвоним</h2>
+								<label for="" class="form__field">
+									<input type="text" class="form__input" name="user-name">
+									<span class="form__lable">Имя</span>
+									<svg class="form__icon" width="18" height="18" >
+										<use href="./img/svg/symbol-defs.svg#icon-person"></use>
+									</svg>
+								</label>
+
+								<button type="submit">Отправить</button>
+							</form>
 						</div>
 					</div>
 				</div>

@@ -363,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
           transform: translate(-50%, -50%) scale(0.8);
 }
 
-.hero__modal {
+.hero .modal-hero {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -381,7 +381,16 @@ h1, h2, h3, h4, h5, h6 {
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
 }
 
-.hero__close {
+.hero .modal-hero__close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   width: 30px;
   height: 30px;
@@ -394,12 +403,52 @@ h1, h2, h3, h4, h5, h6 {
   transition: color 250ms var(--timing-function);
 }
 
-.hero__close:hover {
+.hero .modal-hero__close:hover {
   color: var(--main-color);
 }
 
-.hero__closed-icon {
+.hero .modal-hero__closed-icon {
   fill: currentColor;
+}
+
+.hero .form {
+  padding: 40px;
+}
+
+.hero .form__title {
+  margin-bottom: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero .form__field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hero .form__input {
+  width: 100%;
+  padding: 12px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.hero .form__lable {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.hero .form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .principles {
