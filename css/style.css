@@ -107,8 +107,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-h3 {
+  display: block;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--color-main-dark);
 }
 
@@ -124,6 +128,36 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-color);
+}
+
+.main-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 200px;
+  height: 50px;
+  padding: 0 10px;
+  background-color: var(--main-color);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.86;
+  letter-spacing: 0.06em;
+  color: var(--color-main-light);
+  -webkit-transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+}
+
+.main-button:hover, .main-button:focus {
+  background-color: var(--color-bg-main);
 }
 
 .visually-hidden {
@@ -317,27 +351,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
 }
 
-.hero__button {
-  display: inline-block;
-  padding: 10px 32px;
-  background-color: var(--main-color);
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.86;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-main-light);
-  -webkit-transition: background-color 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
-}
-
-.hero__button:hover, .hero__button:focus {
-  background-color: var(--color-bg-main);
-}
-
 .hero__backdrop {
   position: fixed;
   top: 0;
@@ -418,13 +431,13 @@ h1, h2, h3, h4, h5, h6 {
 .hero .form__title {
   margin-bottom: 30px;
   font-size: 20px;
-  text-align: center;
+  text-transform: none;
 }
 
 .hero .form__field {
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
 }
 
 .hero .form__input {
@@ -439,6 +452,10 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 100%;
   left: 0;
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: var(--color-second-dark);
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
 }
@@ -512,14 +529,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-height: 70px;
   padding: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  text-transform: uppercase;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: var(--color-main-light);
   background-color: rgba(47, 48, 58, 0.8);
 }
@@ -549,15 +559,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .team .iteam-card__text {
   padding: 30px 32px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 .team .iteam-card__title {
   margin-bottom: 10px;
   font-weight: 500;
+  color: var(--color-main-dark);
 }
 
 .team .iteam-card__subtitle {
   margin-bottom: 16px;
+  color: var(--color-second-dark);
 }
 
 .team .iteam-card__social-list {
@@ -657,15 +672,40 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__social {
   margin-top: 12px;
+  margin-right: 93px;
 }
 
 .footer__social-title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
+  text-align: left;
   color: var(--color-main-light);
+}
+
+.footer__form {
+  margin-top: 12px;
+}
+
+.footer .form-footer__title {
+  margin-bottom: 20px;
+  text-align: left;
+  color: var(--color-main-light);
+}
+
+.footer .form-footer__input {
+  margin-right: 12px;
+  padding: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: inherit;
+  color: var(--color-main-light);
+}
+
+.footer .form-footer__icon {
+  margin-left: 10px;
 }
 
 .social-footer {
