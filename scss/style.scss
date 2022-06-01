@@ -400,6 +400,7 @@ textarea{
 			position: relative;
 			display: block;
 			margin-bottom: 28px;
+
 			&:focus-within > .form__icon{
 				color: var(--main-color);
 			}
@@ -413,6 +414,8 @@ textarea{
 			padding-left: 42px;
 			border: 1px solid rgba(33, 33, 33, 0.2);
 			border-radius: 4px;
+
+			transition: border 250ms var(--timing-function);
 		}
 		&__lable {
 			position: absolute;
@@ -433,6 +436,7 @@ textarea{
 			fill: currentColor;
 
 			transform: translateY(-50%);
+			transition: color 250ms var(--timing-function);
 		}
 		&__field-textarea{
 			position: relative;

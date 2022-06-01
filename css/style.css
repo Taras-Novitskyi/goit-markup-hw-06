@@ -459,6 +459,8 @@ textarea {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  -webkit-transition: border 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .hero .form__lable {
@@ -480,6 +482,8 @@ textarea {
   fill: currentColor;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function);
 }
 
 .hero .form__field-textarea {
