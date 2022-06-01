@@ -72,26 +72,35 @@
 							</button>
 							<form class="modal-hero__form form">
 								<h2 class="form__title title-h3">Оставьте свои данные, мы вам перезвоним</h2>
-								<label for="" class="form__field">
+								<label class="form__field">
 									<input type="text" class="form__input" name="user-name">
 									<span class="form__lable">Имя</span>
 									<svg class="form__icon" width="18" height="18" >
 										<use href="./img/svg/symbol-defs.svg#icon-person"></use>
 									</svg>
 								</label>
-								<label for="" class="form__field">
+								<label class="form__field">
 									<input type="tel" class="form__input" name="phone-number">
 									<span class="form__lable">Телефон</span>
 									<svg class="form__icon" width="18" height="18" >
 										<use href="./img/svg/symbol-defs.svg#icon-phone"></use>
 									</svg>
 								</label>
-								<label for="" class="form__field">
+								<label class="form__field">
 									<input type="email" class="form__input" name="email">
 									<span class="form__lable">Почта</span>
 									<svg class="form__icon" width="18" height="18" >
 										<use href="./img/svg/symbol-defs.svg#icon-email"></use>
 									</svg>
+								</label>
+								<label class="form__field-textarea">
+									<textarea  name="comment"  class="form__textarea" placeholder="Введите текст"></textarea>
+									<span class="form__lable">Комментарий</span>
+								</label>
+								<label class="form__field-checkbox">	
+									<input type="checkbox" class="form__input-checkbox" name="policy">
+									<span class="form__icon-checkbox"></span>
+									<span class="form__lable-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" target="_blank" class="form__link-checkbox">Условия договора</a></span>
 								</label>
 
 								<button class="form__buttom main-button" type="submit">Отправить</button>
