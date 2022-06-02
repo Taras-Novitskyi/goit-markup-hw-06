@@ -560,6 +560,10 @@ textarea {
   position: absolute;
 }
 
+.hero .form__input-checkbox:focus + .form__icon-checkbox {
+  background-image: url("../img/webstudio/hero/modal/unselected-focus.svg");
+}
+
 .hero .form__input-checkbox:checked + .form__icon-checkbox {
   background-image: url("../img/webstudio/hero/modal/check.svg");
 }

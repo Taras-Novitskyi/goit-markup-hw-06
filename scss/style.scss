@@ -481,6 +481,10 @@ textarea{
 			appearance: none;
 			position: absolute;
 
+			&:focus + .form__icon-checkbox{
+				background-image: url('../img/webstudio/hero/modal/unselected-focus.svg');
+			}
+
 			&:checked + .form__icon-checkbox{
 				background-image: url('../img/webstudio/hero/modal/check.svg');
 			}
