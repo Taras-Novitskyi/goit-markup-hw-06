@@ -374,6 +374,7 @@ textarea{
 			border: 1px solid rgba(0, 0, 0, 0.1);
 			border-radius: 50%;
 			color: #000000;
+			background-color: var(--color-main-light);
 	
 			transition: color 250ms var(--timing-function);
 	
@@ -414,6 +415,7 @@ textarea{
 			padding-left: 42px;
 			border: 1px solid rgba(33, 33, 33, 0.2);
 			border-radius: 4px;
+			outline: none;
 
 			transition: border 250ms var(--timing-function);
 		}
@@ -442,15 +444,22 @@ textarea{
 			position: relative;
 			display: block;
 			margin-bottom: 20px;
+
+			&:focus-within > .form__textarea{
+				border: 1px solid var(--main-color);
+			}
 		}
 		
 		&__textarea{
 			width: 100%;
 			height: 120px;
 			padding: 12px 16px;
+			outline: none;
 
 			border: 1px solid rgba(33, 33, 33, 0.2);
 			border-radius: 4px;
+			
+			transition: border 250ms var(--timing-function);
 
 			&::placeholder{
 				font-size: 12px;
@@ -490,6 +499,10 @@ textarea{
 		&__link-checkbox{
 			color: var(--main-color);
 			text-decoration: underline;
+
+			&:hover, &:focus{
+				text-decoration: none;
+			}
 		}
 	}
 }
@@ -713,17 +726,24 @@ textarea{
 				color: var(--color-main-light);
 			}
 			&__field {
+				&:focus-within > .form-footer__input{
+					border: 1px solid var(--main-color);
+				}
 			}
 			&__input {
 				margin-right: 12px;
 				padding: 16px;
 				width: 358px;
 				height: 50px;
-				border: 1px solid rgba(255, 255, 255, 0.3);
-				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-				border-radius: 4px;
 				background-color: inherit;
 				color: var(--color-main-light);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+				outline: none;
+
+				filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+				border-radius: 4px;
+
+				transition: border 250ms var(--timing-function);
 			}
 			&__buttom {}
 			&__icon {
